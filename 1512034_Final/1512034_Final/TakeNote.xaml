@@ -1,0 +1,18 @@
+﻿<Window x:Class="_1512034_Final.TakeNote"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1512034_Final"
+        mc:Ignorable="d"
+        Title="TakeNote" Height="450" Width="400" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid>
+        <TextBox x:Name="txbTags" HorizontalAlignment="Left" Height="23" Margin="24,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336" TextChanged="txbTags_TextChanged"/>
+        <Label Content="Tags:(seperated by commas: '','' )" HorizontalAlignment="Left" Margin="24,292,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold" Width="209"/>
+        <Label Content="Note:" HorizontalAlignment="Left" Margin="24,10,0,0" VerticalAlignment="Top" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBox x:Name="txbNote" HorizontalAlignment="Left" Height="226" Margin="24,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="336"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="283,374,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial" FontWeight="Bold" Background="#FF34C942" Foreground="White" BorderBrush="#FF34C942" Click="btnSave_Click"/>
+        <ComboBox x:Name="cbbSuggest" HorizontalAlignment="Left" Margin="238,294,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cbbSuggest_SelectionChanged"/>
+
+    </Grid>
+</Window>
